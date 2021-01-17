@@ -11,9 +11,13 @@ Below you can see a hierarchy of the most popular server software based on the o
 - [Vanilla Server](https://www.minecraft.net/en-us/download/server)
   - [CraftBukkit](https://bukkit.org)
     - [Spigot](https://spigotmc.org)
-      - [TacoSpigot](https://tacospigot.github.io)
       - [PaperMC](https://papermc.io)
+        - [Tuinity](https://github.com/Spottedleaf/Tuinity)
+        - [TacoSpigot](https://tacospigot.github.io)
   - [Sponge](https://spongepowered.org)
+  - [Forge](https://minecraftforge.net)
+  - [Fabric](https://fabricmc.net)
+    - [Woven](https://www.wovenmc.net/)
 
 #### CraftBukkit
 
@@ -26,6 +30,20 @@ See [the API repository](./api-repository.md) for a list of tools for Bukkit-bas
 #### Sponge
 
 [Sponge](https://spongepowered.org) is another modified vanilla server independent of CraftBukkit. It also has a plugin system with an API to create server-side mods, but additionally, it's commonly used as a server for the [Forge](http://files.minecraftforge.net) modding platform.
+
+#### TacoSpigot
+[TacoSpigot](https://tacospigot.github.io) is a even higher performance fork of [Paper](https://papermc.io)Spigot.
+
+#### Tuinity
+[Tuinity](https://github.com/Spottedleaf/Tuinity) is a Fork of Paper aimed to improve performance at high playercounts.
+
+#### Forge
+
+[Forge](https://minecraftforge.net) is a modified version of the vanilla server (& client) just like CraftBukkit, but it's not only for server side modding, it also has a client version that must be installed to work.
+
+#### Fabric
+
+[Fabric](https://fabricmc.net) is an alternative to Forge which aims to be more modular and with a more modern api than forge. It also has native support for [Kotlin](https://kotlinlang.org), [Scala](https://www.scala-lang.org/) and [Groovy](https://groovy-lang.org/).
 
 ### Re-Implementations
 
@@ -59,6 +77,17 @@ Reverse proxies can be used to coordinate connections between different servers.
 - [BungeeCord](https://github.com/SpigotMC/BungeeCord)
   - [Waterfall](https://github.com/PaperMC/Waterfall)
     - [Travertine](https://github.com/PaperMC/Travertine)
+- [Velocity](https://velocitypowered.com)
+
+#### BungeeCord
+
+BungeeCord is the de-facto standard for Minecraft Networks. You can link multiple servers together and dynamically switch between them. Most Networks use [Waterfall](https://github.com/PaperMC/Waterfall) by the PaperMC team. It's like Paper for spigot, but for bungeecord.
+
+#### Velocity
+
+Velocity is a modern alternative to BungeeCord which is faster and more secure than BungeeCord. It also has a nice [Plugin API](https://docs.velocitypowered.com/en/latest/developers/creating-your-first-plugin.html). Also it provides some compatibility stuff, so it can handle the BungeeCord Plugin Messaging Channel.
+
+#### 
 
 ## Bedrock Edition
 
